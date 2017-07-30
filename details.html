@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>汽车之家 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.useso.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--image slider-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-slider.js" type="text/javascript"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/global.css">
+<script src="js/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="logo">
+      <h1><a href="index.html" style="font-size:40px">汽车之家</a></h1>
+    </div>
+    <div class="h_right">
+      <div class="drp-dwn">
+        <ul>
+          <li>
+            <h3>选择语言 :</h3>
+          </li>
+          <li>
+            <select onChange="window.location=this.options[this.selectedIndex].value">
+              <option value="">English</option>
+              <option value="">Chinese</option>
+              <option value="">French</option>
+            </select>
+          </li>
+
+        </ul>
+      </div>
+      <div class="header_top_right">
+        <div class="login"> <span><a href="login.html"><img src="images/login.png" alt="" title="login"></a></span> </div>
+        <div class="shopping_cart">
+          <div class="cart_img"> <img src="images/header_cart.png"> </div>
+          <div class="cart"> <a href="#" title="View my shopping cart" rel="nofollow"> <span class="cart_title">购物车</span> <span class="no_product">空</span> </a> </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="h_main">
+      <ul class="nav">
+        <li class="active"><a href="index.html">主页</a></li>
+        <li><a href="maintain.html">浏览</a></li>
+        <li><a href="repair.html">去看看</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+      <div class="search">
+        <form>
+          <input type="text" value="">
+          <input type="submit" value="">
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main1">
+      <div class="details">
+        <div class="product-details">
+          <div class="images_3_of_2">
+            <div id="container">
+              <div id="products_example">
+                <div id="products">
+                  <div class="slides_container"> <a href="#" target="_blank"><img src="images/productslide-1.jpg" alt=" " /></a> <a href="#" target="_blank"><img src="images/productslide-2.jpg" alt=" " /></a> <a href="#" target="_blank"><img src="images/productslide-3.jpg" alt=" " /></a> <a href="#" target="_blank"><img src="images/productslide-4.jpg" alt=" " /></a> </div>
+                  <ul class="pagination">
+                    <li><a href="#"><img src="images/d_pic1.jpg" alt=" " /></a></li>
+                    <li><a href="#"><img src="images/d_pic2.jpg" alt=" " /></a></li>
+                    <li><a href="#"><img src="images/d_pic3.jpg" alt=" " /></a></li>
+                    <li><a href="#"><img src="images/d_pic4.jpg" alt=" " /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desc span_3_of_2">
+            <h2>国外名品车 </h2>
+            
+            <div class="price">
+              <p>Price: <span>280万</span></p>
+            </div>
+            <div class="available">
+              
+              <ul>
+                <li>颜色:
+                  <select>
+                    <option>银色</option>
+                    <option>灰色</option>
+                    <option>深黑</option>
+                    <option>红色</option>
+                  </select>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="share-desc">
+              <div class="share">
+                <p>分享到 :</p>
+                <ul>
+                  <li><a href="#"><img src="images/icon_1.png" alt=""></a></li>
+                  <li><a href="#"><img src="images/icon_2.png" alt=""></a></li>
+                  <li><a href="#"><img src="images/icon_3.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="button1"><span><a href="details.html" class="button button-rounded" >添加购物车</a></span></div>
+              <div class="clear"></div>
+            </div>
+            <div class="wish-list">
+              
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="product_desc">
+          <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list">
+              <li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab">更多名车</li>
+              <li class="resp-tab-item" aria-controls="tab_item-1" role="tab">更多资讯</li>
+              <li class="resp-tab-item" aria-controls="tab_item-2" role="tab">选你所选</li>
+              <div class="clear"></div>
+            </ul>
+            <div class="resp-tabs-container">
+              <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Product Details</h2>
+              <div class="product-desc resp-tab-content resp-tab-content-active" style="display:block" aria-labelledby="tab_item-0">
+                <p>Alpina D3 Bi-Turbo Sedan/Touring以及Coupe：基于宝马3系的E90/E91/E92，采用123d的发动机，最大马力211匹，最大扭矩450Nm。</span>Alpina B3 S Bi-Turbo：基于宝马335i的E90-E93平台，最大马力400匹，最大扭矩400Nm，并且可以选择后驱或者四驱。</p>
+                <p>Alpina B5 Bi-Turbo：基于宝马5系F10/F11平台，采用4.4升V8双涡轮发动机（与B7同款），最大马力507匹，最大扭矩700Nm。<span>Alpina B6 Bi-Turbo：基于宝马6系F12/F13平台，采用4.4升V8双涡轮发动机，最大马力540匹，最大扭矩730Nm。</span> Alpina B3 GT3：为了庆祝Alpina在2011年ADAC GT Masters的胜利，Alpina决定限量生产一款B3 S Bi-Turbo，命名为Alpina B3 GT3。Alpina对这款车的排气系统进行了进一步的优化（与Akrapovic合作），将最大马力提升到了300kW（408匹马力）。制动系统和悬挂系统也进行了进一步的升级以适应更加激烈的驾驶用途。在外观方面，B3 GT3使用了碳纤维的尾翼，前扩散器，以及19寸的轻量化Alpina GT3 Classic轮辋，颜色为喜马拉雅灰。同时客户还可以额外订购一套同样型号的轮辋，配有米其林Pilot Sport Cup+高性能轮胎，以供在赛道狂飙时使用。Alpina B3 GT3一共只生产99辆。</p>
+                <p>Alpina车型的标志性特点包括20幅铝合金轮辋，Alpina Blue金属车漆以及昂贵的内饰材料等，同时车内具有品牌和序列号的铭牌。同时相比于BMW M Power的系列产品，Alpina的车型更偏重于豪华舒适和更高的扭矩输出，并且只使用自动变速箱。</p>
+              </div>
+              <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>product Tags</h2>
+              <div class="product-tags resp-tab-content" aria-labelledby="tab_item-1">
+                <p>Alpina与宝马的合作十分紧密，甚至其生产过程也已经融入了宝马的生产线。比如Alpina B7便是与普通的宝马7系共同来自于位于德国Dingolfing的宝马生产线，其4.4升V8发动机也是在Alpina位于Buchloe的总部手工组装之后运往宝马的生产线进行安装，而组装完成的Alpina车辆会被送回Alpina总部进行最终的完善。同时，Alpina的车型虽然都是基于BMW的产品，但是从70年代末期Alpina成为T?V认证的汽车制造商之后，其车型都已经被注册Alpina生产而非BMW。但是即使这样，人们也可以通过很多BMW的经销商购买到Alpina的车型，并且也可以在经销商处享受维修保养服务。</p>
+                <h4>发表你的观点:</h4>
+                <div class="input-box">
+                  <input type="text" value="">
+                </div>
+                <div class="button"><span><a href="#">发布</a></span></div>
+              </div>
+              <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>Product Reviews</h2>
+              <div class="review resp-tab-content" aria-labelledby="tab_item-2">
+                
+                <ul>
+                  <li>Price :<a href="#"><img src="images/price-rating.png" alt=""></a></li>
+                  <li>Value :<a href="#"><img src="images/value-rating.png" alt=""></a></li>
+                  <li>Quality :<a href="#"><img src="images/quality-rating.png" alt=""></a></li>
+                </ul>
+                <p>Alpina与宝马的合作十分紧密，甚至其生产过程也已经融入了宝马的生产线。比如Alpina B7便是与普通的宝马7系共同来自于位于德国Dingolfing的宝马生产线，其4.4升V8发动机也是在Alpina位于Buchloe的总部手工组装之后运往宝马的生产线进行安装，而组装完成的Alpina车辆会被送回Alpina总部进行最终的完善。同时，Alpina的车型虽然都是基于BMW的产品，但是从70年代末期Alpina成为T?V认证的汽车制造商之后，其车型都已经被注册Alpina生产而非BMW。但是即使这样，人们也可以通过很多BMW的经销商购买到Alpina的车型，并且也可以在经销商处享受维修保养服务。</p>
+                <div class="your-review">
+                  <h3>你喜欢这款产品吗</h3>
+                  <p>请给予你的评价?</p>
+                  <form>
+                    <div> <span>
+                      <label>昵称<span class="red">*</span></label>
+                      </span> <span>
+                      <input type="text" value="">
+                      </span> </div>
+                    <div><span>
+                      <label>你欣赏的车系<span class="red">*</span></label>
+                      </span> <span>
+                      <input type="text" value="">
+                      </span> </div>
+                    <div> <span>
+                      <label>评论<span class="red">*</span></label>
+                      </span> <span>
+                      <textarea> </textarea>
+                      </span> </div>
+                    <div> <span>
+                      <input type="submit" value="提交">
+                      </span> </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+   </script>
+        <div class="content_bottom">
+          <div class="text-h1 top1 btm">
+            <h2>更多展示</h2>
+          </div>
+          <div class="div2">
+            <div id="mcts1"> <img src="images/d_pic2.jpg" alt=""/> <img src="images/d_pic1.jpg" alt="" /> <img src="images/d_pic3.jpg" alt="" /> <img src="images/d_pic4.jpg" alt=""/> <img src="images/d_pic1.jpg" alt="" /> <img src="images/d_pic4.jpg" alt="" /> </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="f_left">
+      <div class="f_nav">
+        <ul>
+          <li><a href="">about us</a></li>
+          <li><a href="">site map</a></li>
+          <li><a href="">customer Service</a></li>
+          <li><a href="">search terms</a></li>
+          <li><a href="">contact us</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        
+      </div>
+    </div>
+    <div class="social-icons">
+      <ul>
+        <li class="icon1"><a href="#" target="_blank"> </a></li>
+        <li class="icon2"><a href="#" target="_blank"> </a></li>
+        <li class="icon3"><a href="#" target="_blank"> </a></li>
+        <li class="icon4"><a href="#" target="_blank"> </a></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>
